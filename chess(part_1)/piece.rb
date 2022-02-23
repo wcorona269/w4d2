@@ -21,7 +21,5 @@ class Piece
     def pos=(pos)
         board[pos] = self
     end
-
-    
-
 end
+

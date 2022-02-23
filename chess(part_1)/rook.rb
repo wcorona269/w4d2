@@ -1,10 +1,22 @@
 require_relative "piece"
+require_relative "slideable"
 
 class Rook < Piece
-    def initialize 
-        @value = "Rook"
-    end 
+    include Slideable 
 
 
-    
+    def symbol 
+        "♜"
+    end
+
+    private
+
+    def move_dirs
+        horizontal_dirs
+
+
+
+    end
+
+
 end
