@@ -23,11 +23,11 @@ class Board
 
 
     def move_piece(start_pos, end_pos)
-        x, y = end_pos 
+        x, y = end_pos
+
         this_piece = self[start_pos]
-    
         all_moves = this_piece.moves
-        p "Test puts"
+        
         if all_moves.include?(end_pos)
             p "All_moves is this - #{all_moves}" 
             self[end_pos] = this_piece
@@ -56,13 +56,13 @@ my_board[[2,2]] = Rook.new("black", my_board, [2,2])
 # p my_board[[2,2]].value 
 # p my_board[[1,1]].value 
 
-# p "2,2 is  #{my_board[[2,2]].value}"
-# p "3,3 is  #{my_board[[3,3]].value}"
+p "2,2 is  #{my_board[[2,2]].value}"
+p "4,2 is  #{my_board[[4,2]].value}"
 
-p my_board.move_piece([2,2], [3,3])
+p my_board.move_piece([2,2], [4,2])
 
-# p "2,2 is now #{my_board[[2,2]].value}"
-# p "3,3 is now #{my_board[[3,3]].value}"
+p "2,2 is now #{my_board[[2,2]].value}"
+p "4,2 is now #{my_board[[4,2]].value}"
 
 # my_board.move_piece([5,5],[6,6])
 # my_board.move_piece([2,2], [20,20])

@@ -11,6 +11,7 @@ class Piece
         @color = color
         @board = board
         @pos = pos
+        @value = "my_piece"
     end
 
     #check if piece is a NullPiece

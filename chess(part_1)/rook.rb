@@ -6,7 +6,7 @@ class Rook < Piece
 
 
     def symbol 
-        "♜"
+        "♜".colorize(blue)
     end
 
     private
